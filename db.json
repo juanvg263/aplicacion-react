@@ -1,0 +1,11 @@
+{
+  "usuarios": [
+    {
+      "id": "JuanV",
+      "nombre": "Juan Villegas",
+      "password": "12345",
+      "correo": "juan@gmail.com",
+      "genero": "hombre"
+    }
+  ]
+}
