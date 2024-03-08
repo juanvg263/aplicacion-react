@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Register = () =>{
@@ -69,32 +69,33 @@ const Register = () =>{
                 <form className="container">
                     <div className="card">
                         <div className="card-header">
-                            <h1>Registrar nuevo usuarion</h1>
+                            <h1>Registrar nuevo usuario</h1>
                         </div>
                         <div className="card-body">
                             <div className="row">
                                 <div className="cki-lg-6">
                                     <div className="form-group">
-                                        <label>Nombre Usuario<span className="errmsg"></span>*</label>
+                                        <label>Nombre Usuario<span className="errmsg">*</span></label>
                                         <input value={id} onChange={e=>idchange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
                                 <div className="cki-lg-6">
                                     <div className="form-group">
-                                        <label>Nombre Completo<span className="errmsg"></span>*</label>
+                                        <label>Nombre Completo<span className="errmsg">*</span></label>
                                         <input value={nombre} onChange={e=>nombrechange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
+                               
                                 <div className="cki-lg-6">
                                     <div className="form-group">
-                                        <label>Contraseña<span className="errmsg"></span>*</label>
-                                        <input type="password" value={password} onChange={e=>passwordchange(e.target.value)} className="form-control"></input>
+                                        <label>Correo<span className="errmsg">*</span></label>
+                                        <input value={correo} onChange={e=>correochange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
                                 <div className="cki-lg-6">
                                     <div className="form-group">
-                                        <label>Correo<span className="errmsg"></span>*</label>
-                                        <input value={correo} onChange={e=>correochange(e.target.value)} className="form-control"></input>
+                                        <label>Contraseña<span className="errmsg">*</span></label>
+                                        <input type="password" value={password} onChange={e=>passwordchange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
                                 <div className="cki-lg-6">
@@ -111,7 +112,7 @@ const Register = () =>{
                         </div>
                         <div className="card-footer">
                             <button type="submit" className="btn btn-primary">Registrar</button> |
-                            <a className="btn btn-danger">Cancelar</a>
+                            <Link className="btn btn-danger" to={'/login'}>Cancelar</Link>
                         </div>
                     </div>
                 </form>

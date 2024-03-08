@@ -27,12 +27,74 @@
 .header{
   width: 100%;
   background-color: cornflowerblue;
-  color: white;
-  padding: 1%;
+  color: black;
+  padding: 10px;
 }
 
 .errmsg{
   color: red;
+}
+
+.texto-home{
+  text-align: center;
+  background-color: cornflowerblue;
+  color: white;
+  width: 550px;
+  margin-left: 30%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.navegacion{
+  color: rgb(84, 130, 173);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
+.form-tarea {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 50%;
+}
+
+.form-tarea form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-tarea label {
+  margin-bottom: 5px;
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.form-tarea input,
+.form-tarea textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
 }
 
 .App-link {

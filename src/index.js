@@ -5,6 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import 'primereact/resources/themes/bootstrap4-light-purple/theme.css'
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+        
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

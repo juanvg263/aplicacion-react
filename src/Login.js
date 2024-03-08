@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Password } from 'primereact/password';
+import { InputText } from "primereact/inputtext";
+import { Button } from 'primereact/button';
+
 
 const Login = () => {
     const [username,usernameupdate]=useState('');
@@ -55,21 +59,24 @@ const Login = () => {
                 <form onSubmit={ProceedLogin} className="container">
                     <div className="card">
                         <div className="card-header">
-                            <h2>Login de Usuarios</h2>
+                            <h2>Iniciar sesión</h2>
                         </div>
                         <div className="card-body">
                             <div className="form-group">
-                                <label>Nombre de Usuario <span className="errmsg">*</span></label>
-                                <input value={username} onChange={e=>usernameupdate(e.target.value)} className="form-control"></input>
+                                <label><i className="pi pi-user"></i>Nombre de Usuario <span className="errmsg">*</span></label>
+                                <InputText style={{ width: '100%' }} value={username} onChange={(e) => usernameupdate(e.target.value)} />
                             </div>
                             <div className="form-group">
                                 <label>Contraseña <span className="errmsg">*</span></label>
-                                <input value={password} onChange={e=>passwordupdate(e.target.value)} type="password" className="form-control"></input>
+                                {/*<input value={password} onChange={e=>passwordupdate(e.target.value)} type="password" className="form-control"></input>*/}
+                                <Password  style={{ width: '100%' }} value={password} onChange={(e) => passwordupdate(e.target.value)} toggleMask />
+                                
                             </div>
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Ingresar</button> |
-                              <Link className="btn btn-success" to={'/register'}>Nuevo Usuario</Link>
+                        <Button label="Ingresar" severity="success" />  |
+                                <a>Ya tienes cuenta?</a>
+                              <Link className="btn btn-link" to={'/register'}>Crear cuenta</Link>
                         </div>
                     </div>
                 </form>

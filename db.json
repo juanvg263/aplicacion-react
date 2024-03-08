@@ -6,6 +6,57 @@
       "password": "12345",
       "correo": "juan@gmail.com",
       "genero": "hombre"
+    },
+    {
+      "id": "AlexG",
+      "nombre": "Alexis Galinndo",
+      "password": "4321",
+      "correo": "alex@gmail.com",
+      "genero": "hombre"
+    }
+  ],
+  "tareas": [
+    {
+      "titulo": "Avance del proyecto de integradora",
+      "descripcion": "Hacer un avance a todos las actividades pendientes de integradora",
+      "fecha": "2024-03-06T06:00:00.000Z",
+      "seleccionarPrioridad": {
+        "tipo": "Alta"
+      },
+      "selectestado": {
+        "estado": "En Proceso"
+      },
+      "categoria": "1",
+      "responsable": "Juan VIllegas",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "titulo": "Documentacion de GitHub",
+      "descripcion": "Subir la aplicacion a Github y hacer la documentaicon del proceso",
+      "fecha": "2024-03-14T06:00:00.000Z",
+      "seleccionarPrioridad": {
+        "tipo": "Media"
+      },
+      "selectestado": {
+        "estado": "En Proceso"
+      },
+      "categoria": "1",
+      "responsable": "Juan VIllegas"
+    },
+    {
+      "id": "6",
+      "titulo": "Aplicacion de React",
+      "descripcion": "Hacer una aplilcacion en React",
+      "fecha": "2024-03-05T06:00:00.000Z",
+      "seleccionarPrioridad": {
+        "tipo": "Media"
+      },
+      "selectestado": {
+        "estado": "En Proceso"
+      },
+      "categoria": "1",
+      "responsable": "Juan Jose VIllegas"
     }
   ]
 }
